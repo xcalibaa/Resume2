@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The two tab</title>
+    <style>
+      .header {
+        border-bottom: 2px solid gray;
+      }
+      .card {
+        background-color: #eee;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      .color {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The two tab</h1>
+    <a href="practice.html">Резюме</a>
+    <hr />
+    <h2>IMG</h2>
+    <img
+      src="https://img1.akspic.ru/crops/7/3/8/2/7/172837/172837-deti_singulyarnostej-pereosmyslenie-nauchnaya_fantastika-kniga-sinij-1920x1080.jpg"
+      width="1000"
+      alt="Вид из космоса"
+    />
+    <h2>Local IMG</h2>
+    <img src="girl.jpg" width="1000" />
+    <br />
+    <br />
+    <img src="images/space.jpg" width="1000" />
+    <br />
+    <hr />
+    <h2>Списки</h2>
+    <ul>
+      <li>Элемент 1</li>
+      <li>Элемент 2</li>
+      <li>Элемент 3</li>
+      <li>Элемент 4</li>
+      <li>Элемент 5</li>
+    </ul>
+    <ol>
+      <li>Элемент 1</li>
+      <li>Элемент 2</li>
+      <li>Элемент 3</li>
+      <li>Элемент 4</li>
+      <li>Элемент 5</li>
+    </ol>
+    <hr />
+    <ul>
+      <li>
+        Элемент 1
+        <ul>
+          <li>Вложенный Элемент 1</li>
+          <li>Вложенный Элемент 2</li>
+          <li>Вложенный Элемент 3</li>
+        </ul>
+      </li>
+      <li>Элемент 2</li>
+      <li>Элемент 3</li>
+      <li>Элемент 4</li>
+      <li>Элемент 5</li>
+    </ul>
+    <hr />
+    <ul>
+      <li>Elemnt 1</li>
+      <li>Elemnt 2</li>
+      <li>Elemnt 3</li>
+      <li>Elemnt 4</li>
+      <li>Elemnt 5</li>
+    </ul>
+    <hr />
+    <h2>Таблицы</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Имя</th>
+          <th>Возраст</th>
+          <th>Работа</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Никита</td>
+          <td>23</td>
+          <td>Студент</td>
+        </tr>
+        <tr>
+          <td>Антон</td>
+          <td>20</td>
+          <td>Переводчик</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <h2>Формы</h2>
+    <form>
+      <div>
+        <label for="text2">Текст</label>
+        <input type="text" id="text2" value="Текст по умолчанию" readonly />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Введите email" />
+      </div>
+      <div>
+        <label for="password">Пароль</label>
+        <input type="password" id="password" />
+      </div>
+      <div>
+        <label for="number">Число</label>
+        <input type="number" id="number" min="0" />
+      </div>
+      <div>
+        <label for="range">Range</label>
+        <input type="range" id="range" min="0" max="10" step="2" />
+      </div>
+      <div>
+        <label for="date">Дата</label>
+        <input type="date" id="date" />
+      </div>
+      <div>
+        <label for="color">Цвет</label>
+        <input type="color" id="color" />
+      </div>
+      <hr />
+      <h2>Сообщения</h2>
+      <div>
+        <label for="message">Сообщение</label>
+        <textarea id="message" cols="15" rows="10"></textarea>
+      </div>
+      <div>
+        <label for="sex">Ваш пол</label>
+        <select id="sex">
+          <option value="male">Мужчина</option>
+          <option value="female" selected>Женщина</option>
+          <option value="it">Другое</option>
+        </select>
+      </div>
+      <div>
+        <label>Количество работ</label>
+        <input type="radio" name="work" /> 1
+        <input type="radio" name="work" /> 2
+        <input type="radio" name="work" /> 3
+        <input type="radio" name="work" /> 10+
+      </div>
+      <div>
+        <lable>Любимая еда</lable>
+        <input type="checkbox" name="food" />Картошка
+        <input type="checkbox" name="food" />Малюски
+        <input type="checkbox" name="food" />Яблоки
+        <input type="checkbox" name="food" />Бананы
+      </div>
+      <!---<input type="submit" value="Отправить" /> -->
+      <button type="submit">Отправить</button>
+    </form>
+    <hr />
+    <h2>Линейные и блочные элементы</h2>
+    <p style="border: 2px solid blue">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <strong>In eligendi quod sapiente, autem voluptates maxime?</strong>
+      <em>Cumque, sequi asperiores?</em>
+      <span style="border: 2px solid green"
+        >Eveniet similique inventore alias facere, maxime quo corrupti accusamus
+        error natus id.</span
+      >
+    </p>
+    <a href="#" style="border: 2px solid red">This is link</a>
+    <a href="#" style="border: 2px solid red">This is link 2</a>
+    <div style="border: 2px solid green">
+      <a href="#" style="border: 2px solid red">This is link 2</a>
+    </div>
+    <hr />
+    <h2>Классы, ID</h2>
+    <header id="header" class="header">
+      <h2>Site</h2>
+    </header>
+    <nav id="navigation">
+      <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+      </ul>
+    </nav>
+    <hr />
+    <div id="block1" class="card header">
+      <h3>Block 1</h3>
+      <section>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <span class="color"
+          >Cupiditate id nisi explicabo at reprehenderit magnam totam laborum
+          debitis ut asperiores, voluptatem dolor, aut ducimus tempora
+          consequuntur inventore temporibus? Odit, qui?</span
+        >
+      </p>
+    </div>
+    <div id="block2" class="card">
+      <h3>Block 2</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate id
+        nisi explicabo at reprehenderit magnam totam laborum debitis ut
+        asperiores, voluptatem dolor, aut ducimus tempora consequuntur inventore
+        temporibus? Odit, qui?
+      </p>
+    </div>
+  </section>
+    <div id="footer">
+      <ul>
+        <li>Instagram</li>
+        <li>VK</li>
+        <li>YouTube</li>
+      </ul>
+    </div>
+  </body>
+</html>
